@@ -19,18 +19,6 @@
     
     <button data-bind="click: capitalizeLastName">Go caps</button>
     
-     <button id="btn">Show Message</button>
- 
-    <div id="message" style="display:none">         
-        <h1>Hello from jQuery!</h1>         
-    </div>
-
-     <script type='text/javascript'>
-            // Fallback to loading jQuery from a local path if the CDN is unavailable
-            (window.jQuery || document.write('<script src="scripts/jquery-2.2.1.min.js"><\/script>'));
-            // Fallback to loading knockoutjs from a local path if the CDN is unavailable
-            (window.knockoutjs || document.write('<script src="scripts/knockout-3.3.0.js"><\/script>'));
-        </script>
         
     <script type='text/javascript' src='scripts/knockout-3.3.0.js'>
       
@@ -51,18 +39,6 @@
       
       // Activates knockout.js
       ko.applyBindings(new AppViewModel());
-    </script>
-
-    <script type='text/javascript'>                
-        function domReady() {
-            $('#btn').click( showMessage );
-        }
-        
-        function showMessage() {
-            $('#message').fadeIn('slow');
-        }
-        
-        $( domReady );
     </script>
 
 </body>
